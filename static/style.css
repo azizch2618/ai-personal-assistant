@@ -1,6 +1,6 @@
-/* 
+/* =========================================================
    RESET & GLOBAL
-    */
+   ========================================================= */
 
 * {
     margin: 0;
@@ -18,9 +18,9 @@
 }
 
 
-/* 
+/* =========================================================
    BODY
-    */
+   ========================================================= */
 
 body {
     min-height: 100vh;
@@ -49,9 +49,9 @@ body {
 }
 
 
-/* 
+/* =========================================================
    MAIN HEADING
-    */
+   ========================================================= */
 
 .main-heading {
     text-align: center;
@@ -80,9 +80,9 @@ body {
 }
 
 
-/* 
+/* =========================================================
    MAIN CONTAINER
-    */
+   ========================================================= */
 
 .container {
     width: 100%;
@@ -106,9 +106,9 @@ body {
 }
 
 
-/* 
+/* =========================================================
    SECTION HEADINGS
-    */
+   ========================================================= */
 
 h2 {
     position: relative;
@@ -152,56 +152,20 @@ h2::before {
 }
 
 
-/* 
+/* =========================================================
    FORMS
-    */
+   ========================================================= */
 
 form {
     margin-bottom: 20px;
 }
 
 
-/* 
-   TEXT INPUT
-    */
+/* =========================================================
+   ASK ANYTHING TEXTAREA
+   ========================================================= */
 
-input[type="text"] {
-    width: 100%;
-
-    min-height: 54px;
-
-    padding: 15px 17px;
-
-    margin-bottom: 14px;
-
-    border: 1px solid #d8e0ec;
-
-    border-radius: 13px;
-
-    background: #ffffff;
-
-    color: #172033;
-
-    font-size: 15px;
-    font-weight: 400;
-
-    outline: none;
-
-    box-shadow:
-        0 2px 5px rgba(15, 23, 42, 0.02);
-
-    transition:
-        border-color 0.25s ease,
-        box-shadow 0.25s ease,
-        transform 0.2s ease;
-}
-
-
-/* 
-   TEXTAREA
-    */
-
-textarea {
+textarea[name="question"] {
     width: 100%;
 
     min-height: 180px;
@@ -235,11 +199,48 @@ textarea {
 }
 
 
-/* 
-   INPUT FOCUS
-    */
+/* =========================================================
+   EMAIL TEXTAREA
+   ========================================================= */
 
-input[type="text"]:focus,
+textarea[name="email"] {
+    width: 100%;
+
+    min-height: 180px;
+
+    padding: 16px 17px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #d8e0ec;
+
+    border-radius: 13px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+    resize: vertical;
+
+    outline: none;
+
+    box-shadow:
+        0 2px 5px rgba(15, 23, 42, 0.02);
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   ALL TEXTAREA FOCUS
+   ========================================================= */
+
 textarea:focus {
     border-color: #3b82f6;
 
@@ -249,21 +250,19 @@ textarea:focus {
 }
 
 
-/* 
-   INPUT HOVER
-    */
+/* =========================================================
+   TEXTAREA HOVER
+   ========================================================= */
 
-input[type="text"]:hover,
 textarea:hover {
     border-color: #b9c7db;
 }
 
 
-/* 
+/* =========================================================
    PLACEHOLDERS
-    */
+   ========================================================= */
 
-input::placeholder,
 textarea::placeholder {
     color: #94a3b8;
 
@@ -271,9 +270,9 @@ textarea::placeholder {
 }
 
 
-/* 
+/* =========================================================
    BUTTON
-    */
+   ========================================================= */
 
 button {
     position: relative;
@@ -576,13 +575,9 @@ button:disabled {
     }
 
 
-    input[type="text"] {
-        min-height: 50px;
-    }
-
-
-    textarea {
-        min-height: 160px;
+    textarea[name="question"],
+    textarea[name="email"] {
+        min-height: 170px;
     }
 
 }
@@ -629,8 +624,10 @@ button:disabled {
     }
 
 
-    input[type="text"],
-    textarea {
+    textarea[name="question"],
+    textarea[name="email"] {
+        min-height: 160px;
+
         font-size: 14px;
 
         border-radius: 10px;
