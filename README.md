@@ -18,18 +18,21 @@ The application allows users to ask questions and summarize emails through a sim
 ## Tech Stack
 
 ### Backend
+
 - Python
 - Flask
 - OpenAI API
 - python-dotenv
 
 ### Frontend
+
 - HTML5
 - CSS3
 - JavaScript
 - Fetch API
 
 ### Development Tools
+
 - VS Code
 - Git
 - GitHub
