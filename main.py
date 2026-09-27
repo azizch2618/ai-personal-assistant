@@ -63,7 +63,7 @@ def ask():
                     "content": question
                 }
             ],
-            max_output_tokens=3000
+            max_output_tokens=5000
         )
 
         answer = response.output_text.strip()
